@@ -2,7 +2,9 @@ package kg.megacom.auction.mappers;
 
 import kg.megacom.auction.model.dto.*;
 import kg.megacom.auction.model.entity.*;
+@Mapper
 public interface ClassMapper {
+ClassMapper INSTANCES=Mappers.getMapper(ClassMapper.class)
     Bid bidDtoToBid (BidDto bidDto);
     BidDto bidToBidDto (Bid bid);
 
